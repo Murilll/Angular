@@ -1,0 +1,20 @@
+.LoginScreen {
+    display: flex;
+    justify-content: center;
+}
+
+.TransparentScreen {
+    opacity: 1;
+    background-color: aqua;
+    height: 20vh;
+    width: 10vw;
+}
+
+.ScreenElements {
+    display: flex;
+    background-color: rgb(204, 204, 204);
+    color: rgb(0, 0, 0);
+    border-radius: 0.5vw;
+    padding: 10vw;
+}
+

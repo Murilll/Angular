@@ -1,25 +1,32 @@
-<h1>
-    Login
-</h1>
+<div class="LoginScreen">
+    <div class="TransparentScreen"></div>
+    <div class="ScreenElements">
+        <div class="Elements">
+            <h1>
+                Login
+            </h1>
 
-<p>
-    <label>Email/Username</label>
-    <br>
-    <input [(ngModel)]="email">
-</p>
+            <p>
+                <label>Email/Username</label>
+                <br>
+                <input [(ngModel)]="email">
+            </p>
 
-<app-password [seePassword]="false" [breakLineOnInput]="true" (valueChanged)="passwordChanged($event)" />
+            <app-password [seePassword]="false" [breakLineOnInput]="true" (valueChanged)="passwordChanged($event)" />
 
-<p>
-    <button (click)="login()">Logar</button>
-</p>
+            <p>
+                <button mat-raised-button color="accent" (click)="login()">Logar</button>
+            </p>
 
-<p>
-    Não possui conta? <a routerLink="newaccount">Crie uma agora mesmo!</a>
-</p>
+            <p>
+                Não possui conta? <a routerLink="newaccount">Crie uma agora mesmo!</a>
+            </p>
 
-<p>
-    Esqueceu sua senha? <a href="{{'/recover/' + email}}">Recupere agora!</a>
-</p>
+            <p>
+                Esqueceu sua senha? <a href="{{'/recover/' + email}}">Recupere agora!</a>
+            </p>
+        </div>
+    </div>
+</div>
 
 <router-outlet></router-outlet>
