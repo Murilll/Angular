@@ -1,0 +1,7 @@
+<p>
+    <label>Cpf</label>
+    <br>
+    <input (change)="VerifyCpf()" [(ngModel)]="cpf">
+    <br>
+    {{state ? "valido" : "invalido"}}
+</p>
